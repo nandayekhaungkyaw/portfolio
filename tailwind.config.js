@@ -9,7 +9,16 @@ export default {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: 
+           '#2C5364', // Use a single # for the hex code
+        
+        secondary: '#203a43', // Ensure this is terminated correctly
+        third:'#F5F5F5'
+      },
+      
+    },
   },
   plugins: [
     require('preline/plugin'),
