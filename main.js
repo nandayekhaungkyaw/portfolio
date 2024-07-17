@@ -4,6 +4,10 @@ import "./src/typewriteEffect.js";
 import "animate.css";
 import "atropos/css";
 const uiUx = document.querySelector("#uiUx");
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 import Swiper from "swiper/bundle";
 
@@ -95,28 +99,28 @@ import {
 } from "./src/selector.js";
 document.addEventListener("DOMContentLoaded", () => {
   // observation();
-  observation2(test, "animate__lightSpeedInLeft");
-  observation2(aboutMeImg, "animate__lightSpeedInRight");
-  observation2(nav, "animate__lightSpeedInLeft");
-  observation2(skill1, "animate__lightSpeedInRight");
-  observation2(skill2, "animate__lightSpeedInLeft");
-  observation2(skill3, "animate__lightSpeedInRight");
-  observation2(skill4, "animate__lightSpeedInLeft");
-  observation2(ui1, "animate__lightSpeedInRight");
-  observation2(ui2, "animate__lightSpeedInLeft");
-  observation2(ui3, "animate__lightSpeedInRight");
-  observation2(ui4, "animate__lightSpeedInLeft");
-  observation2(ui5, "animate__lightSpeedInRight");
-  observation2(frontend1, "animate__lightSpeedInLeft");
-  observation2(frontend2, "animate__lightSpeedInRight");
-  observation2(footer1, "animate__lightSpeedInLeft");
-  observation2(footer2, "animate__lightSpeedInRight");
+  // observation2(test, "animate__lightSpeedInLeft");
+  // observation2(aboutMeImg, "animate__lightSpeedInRight");
+  // observation2(nav, "animate__lightSpeedInLeft");
+  // observation2(skill1, "animate__lightSpeedInRight");
+  // observation2(skill2, "animate__lightSpeedInLeft");
+  // observation2(skill3, "animate__lightSpeedInRight");
+  // observation2(skill4, "animate__lightSpeedInLeft");
+  // observation2(ui1, "animate__lightSpeedInRight");
+  // observation2(ui2, "animate__lightSpeedInLeft");
+  // observation2(ui3, "animate__lightSpeedInRight");
+  // observation2(ui4, "animate__lightSpeedInLeft");
+  // observation2(ui5, "animate__lightSpeedInRight");
+  // observation2(frontend1, "animate__lightSpeedInLeft");
+  // observation2(frontend2, "animate__lightSpeedInRight");
+  // observation2(footer1, "animate__lightSpeedInLeft");
+  // observation2(footer2, "animate__lightSpeedInRight");
 
-  observation2(footer3, "animate__lightSpeedInLeft");
+  // observation2(footer3, "animate__lightSpeedInLeft");
 
-  observation2(footer4, "animate__lightSpeedInRight");
+  // observation2(footer4, "animate__lightSpeedInRight");
 
-  observation2(footer5, "animate__lightSpeedInLeft");
+  // observation2(footer5, "animate__lightSpeedInLeft");
 
   // // observation3();
   // observation4();
