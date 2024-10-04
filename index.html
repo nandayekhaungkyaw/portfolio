@@ -42,56 +42,60 @@
       class="flex flex-col gap-6 bg-gradient-to-r from-primary to-secondary"
     >
       <!-- nav bar  -->
-      <section
-        class="container flex flex-row justify-between max-sm:hidden text-third" 
-      >
+      <section class="container flex flex-row justify-between text-third">
         <!-- ========== HEADER ========== -->
-        <header data-aos="zoom-in-up" class="flex md:justify-between md:flex-nowrap z-50 w-full py-7">
+        <header data-aos="zoom-in-up" class="flex justify-between items-center w-full py-7">
           <nav
             id="nav"
-            class="relative max-w-7xl w-full flex-row justify-between flex flex-wrap md:grid md:grid-cols-12 basis-full items-center px-4 md:px-8 mx-auto"
+            class="relative w-full flex flex-wrap justify-between items-center px-4 md:px-8 mx-auto"
             aria-label="Global"
           >
-            <div class="md:col-span-3">
-              <!-- Logo -->
+            <!-- Logo -->
+            <div class="flex-shrink-0">
               <a
-                class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+                class="rounded-xl text-xl font-semibold focus:outline-none focus:opacity-80"
                 href="../templates/creative-agency/index.html"
                 aria-label="Preline"
               >
                 <p>Nanda</p>
               </a>
-              <!-- End Logo -->
             </div>
-            <div class="flex flex-row gap-16 justify-end col-span-9 aboutMe">
-              <div>
-                <a
-                  class="inline-block text-third hover:text-red-200 duration-200"
-                  href="#aboutMe"
-                  >About me</a
+            <!-- End Logo -->
+      
+            <!-- Hamburger Icon for Small Screens -->
+            <div class="block md:hidden">
+              <button
+                id="nav-toggle"
+                class="text-third focus:outline-none"
+              >
+                <svg
+                  class="w-8 h-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+              </button>
+            </div>
+      
+            <!-- Navigation Links -->
+            <div
+              id="nav-menu"
+              class="hidden md:flex mt-3  flex-col md:flex-row md:gap-16 md:items-center w-full md:w-auto"
+            >
+              <div>
+                <a class="inline-block text-blue-300 hover:text-red-200 duration-200" href="#aboutMe">About me</a>
               </div>
               <div>
-                <a
-                  class="inline-block text-third hover:text-red-200"
-                  id="uiBtn" href="#uiUx"
-                >
-                  Ui&Ux
-                </a>
+                <a class="inline-block text-blue-300 hover:text-red-200" id="uiBtn" href="#uiUx">Ui&Ux</a>
               </div>
               <div>
-                <a
-                  class="inline-block text-third hover:text-red-200"
-                  href="#frontend"
-                  >Frontend</a
-                >
+                <a class="inline-block text-blue-300 hover:text-red-200" href="#frontend">Frontend</a>
               </div>
               <div>
-                <a
-                  class="inline-block text-third hover:text-red-200"
-                  href="#footer"
-                  >Contact</a
-                >
+                <a class="inline-block text-blue-300 hover:text-red-200" href="#footer">Contact</a>
               </div>
             </div>
           </nav>
@@ -458,7 +462,7 @@
             class="bg-gray-100 border-b rounded-t-xl py-3 px-4 md:py-4 md:px-5"
           >
             <p class="mt-1 text-sm text-primary">Responsive Design</p>
-            <img class="h-[350px] w-1/2 mx-auto" src="./img/online service.png" alt="">
+            <img class="xl:h-[350px] h-[200px] w-1/2 mx-auto" src="./img/online service.png" alt="">
           </div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold text-third">Premium Business Website</h3>
